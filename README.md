@@ -23,28 +23,4 @@ graph TD
     style C fill:#bbf,stroke:#333,stroke-width:2px
     style E fill:#bfb,stroke:#333,stroke-width:2px
 
-stateDiagram-v2
-    ST: Strongly Taken (11)
-    WT: Weakly Taken (10)
-    WNT: Weakly Not Taken (01)
-    SNT: Strongly Not Taken (00)
-
-    SNT --> WNT: T
-    WNT --> ST: T
-    ST --> WT: NT
-    WT --> SNT: NT
-    
-    ST --> ST: T
-    SNT --> SNT: NT
-    WT --> ST: T
-    WNT --> SNT: NT
-
 ---
-
-### Why this is better for your GitHub:
-1.  **Badges:** The top section uses shields.io syntax to give it a "professional repository" look.
-2.  **Mermaid Diagrams:** I included two code blocks for Mermaid. GitHub will automatically turn these into a flowchart and a state diagram. 
-3.  **Callouts:** I used the GitHub-specific `> [!TIP]` syntax which creates a highlighted blue info box in the browser.
-4.  **Visual Hierarchy:** The table and bolded text help recruiters or collaborators scan your profile quickly.
-
-**Since you're working with UVM and SystemVerilog, would you like me to generate a "Verification Plan" snippet in Markdown that you could add to this README?**
